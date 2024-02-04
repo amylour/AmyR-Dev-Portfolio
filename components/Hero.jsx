@@ -20,13 +20,24 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
         {/* text */}
-        <div>
-            <div>Full Stack Developer</div>
-            <h1>Web Developer, Graphic Designer</h1>
-            <p>words and stuff</p>
+        <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
+            <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>Full Stack Developer</div>
+            <h1 className='h1 mb-4'>Web Developer + Graphic Designer</h1>
+            <p className='subtitle max-w-[498px] mx-auto xl:mx-8'>words and stuff</p>
+            {/* buttons */}
+            <div className='flex flex-col gap-y-3 md:flex-row'>
+              <Link href='/contact'>
+              <Button className='gap-x-2'>
+                Contact me <Send size={18} />
+                </Button>
+              </Link>
+              <Button className='gap-x-2'>
+                Contact me <Send size={18} />
+                </Button>
+            </div>
         </div>
         {/* image */}
-        <div>image</div> 
+        <div className='hidden xl:flex relative'>image</div> 
         </div>
         {/* icons */}
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
