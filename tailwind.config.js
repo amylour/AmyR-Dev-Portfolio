@@ -30,6 +30,9 @@ module.exports = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -72,6 +75,9 @@ module.exports = {
       },
       backgroundImage: {
         hero:'url(/hero/Sprinkle.png)',
+        hero_shape:'url(/hero/blob.svg)',
+        hero_shape2_light:'url(/hero/blob2-light.svg)',
+        hero_shape2_dark:'url(/hero/blob2-dark.svg)',
       },
     },
   },
